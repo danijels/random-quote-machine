@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body {
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+  width: 100%;
+}
+
+button, a {
+  border-radius: 0.4em;
+  border: none;
+  color: rgba(240, 240, 240, 1);
+  font-family: inherit;
+  outline: none;
+  padding: 0.5em 1.3em;
+  text-decoration: none;
+  transition: all 1s;
+  user-select: none;
+  &:focus {
+    box-shadow: 0.2em 0.2em 0.2em rgba(128, 128, 128, 1);
+  }
+}
+
+#wrapper {
+  height: 100vh;
+  transition: background-color 1s;
+  width: 100%;
+  #quote-box {
+    background-color: rgba(240, 240, 240, 1);
+    border-radius: 0.5em;
+    left: 50%;
+    max-width: 35em;
+    min-width: 13em;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    #quote {
+      font-size: 1.3em;
+      line-height: 1.2em;
+      text-align: center;
+      transition: color 1s ease;
+      width: 100%;
+    }
+    @media screen and (max-width: 599px) {
+      #quote {
+        font-size: 1em;
+        line-height: 1em;
+      }
+    }
+    #author {
+      padding: 1em;
+      text-align: right;
+      transition: color 1s ease;
+    }
+    #buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5em;
+    }
+  }
+}
