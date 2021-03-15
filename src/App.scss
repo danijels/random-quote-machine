@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
+html {
+  padding: env(safe-area-inset);
+}
+
 body {
   box-sizing: border-box;
   font-family: Raleway, sans-serif;
